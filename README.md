@@ -57,8 +57,10 @@ This extension is not yet on the Chrome Web Store, but you can easily install it
     ```
 2.  **Open Chrome Extensions:** Open Google Chrome and navigate to `chrome://extensions`.
 3.  **Enable Developer Mode:** In the top-right corner, turn on the "Developer mode" toggle.
-4.  **Load the Extension:** Click the "Load unpacked" button that appears on the top-left.
-5.  **Select the Folder:** In the file dialog, select the folder where you cloned or unzipped the project files (containing manifest.json).
+4.  **Load the Extension:**
+    - Click the "Load unpacked" button that appears on the top-left and select the folder where you cloned or unzipped the project files (containing manifest.json).
+    - Or simply drag and drop the extension from your file manager anywhere onto the extensions page in Chrome.
+    ![installachromeextension1](https://github.com/user-attachments/assets/06042336-ccea-4f05-87e2-3d45ff782c3a)
 
 The extension should now be installed and ready to use!
 
