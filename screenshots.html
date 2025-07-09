@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  .scroll-container {
+    display: flex; /* Makes images line up horizontally */
+    overflow-x: auto; /* Enables horizontal scrolling */
+    scroll-snap-type: x mandatory; /* Optional: Snaps to images */
+    -webkit-overflow-scrolling: touch; /* Improves scrolling on iOS */
+    padding-bottom: 10px; /* Add some padding if scrollbar is hidden */
+  }
+  .scroll-container img {
+    flex-shrink: 0; /* Prevents images from shrinking */
+    width: 300px; /* Adjust image width as needed */
+    height: auto;
+    margin-right: 10px; /* Space between images */
+    scroll-snap-align: start; /* Optional: Aligns image to start of scroll area */
+    border: 1px solid #ddd; /* Optional: Adds a border to images */
+    border-radius: 5px; /* Optional: Rounds corners */
+  }
+</style>
+</head>
+<body>
+  <div class="scroll-container">
+    <img src="https://via.placeholder.com/300x200/FF0000/FFFFFF?text=Screenshot+1" alt="Screenshot 1">
+    <img src="https://via.placeholder.com/300x200/00FF00/FFFFFF?text=Screenshot+2" alt="Screenshot 2">
+    <img src="https://via.placeholder.com/300x200/0000FF/FFFFFF?text=Screenshot+3" alt="Screenshot 3">
+    <img src="https://via.placeholder.com/300x200/FFFF00/000000?text=Screenshot+4" alt="Screenshot 4">
+    <img src="https://via.placeholder.com/300x200/FF00FF/FFFFFF?text=Screenshot+5" alt="Screenshot 5">
+  </div>
+</body>
+</html>
