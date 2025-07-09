@@ -1,0 +1,146 @@
+/* material-you.css - Updated for general-purpose website theming */
+
+/* The HTML element will have the class 'material-you-enabled' when the theme is active.
+  It will have the attribute 'dark' when dark mode is on.
+*/
+
+/* --- Light Theme Color Variables --- */
+html.material-you-enabled {
+    --md-sys-color-primary: #6750A4;
+    --md-sys-color-on-primary: #FFFFFF;
+    --md-sys-color-primary-container: #EADDFF;
+    --md-sys-color-on-primary-container: #21005D;
+    --md-sys-color-secondary: #625B71;
+    --md-sys-color-on-secondary: #FFFFFF;
+    --md-sys-color-background: #FFFBFE;
+    --md-sys-color-on-background: #1C1B1F;
+    --md-sys-color-surface: #FFFBFE;
+    --md-sys-color-on-surface: #1C1B1F;
+    --md-sys-color-surface-variant: #E7E0EC;
+    --md-sys-color-on-surface-variant: #49454F;
+    --md-sys-color-outline: #79747E;
+}
+
+/* --- Dark Theme Color Variables --- */
+html.material-you-enabled[dark] {
+    --md-sys-color-primary: #D0BCFF;
+    --md-sys-color-on-primary: #381E72;
+    --md-sys-color-primary-container: #4F378B;
+    --md-sys-color-on-primary-container: #EADDFF;
+    --md-sys-color-secondary: #CCC2DC;
+    --md-sys-color-on-secondary: #332D41;
+    --md-sys-color-background: #1C1B1F;
+    --md-sys-color-on-background: #E6E1E5;
+    --md-sys-color-surface: #1C1B1F;
+    --md-sys-color-on-surface: #E6E1E5;
+    --md-sys-color-surface-variant: #49454F;
+    --md-sys-color-on-surface-variant: #CAC4D0;
+    --md-sys-color-outline: #938F99;
+}
+
+
+/* === GENERIC ELEMENT STYLES === */
+/* Only apply these styles when the theme is enabled */
+
+html.material-you-enabled body,
+html.material-you-enabled html {
+    background-color: var(--md-sys-color-background) !important;
+    color: var(--md-sys-color-on-background) !important;
+}
+
+/* General text elements */
+html.material-you-enabled p,
+html.material-you-enabled span,
+html.material-you-enabled li,
+html.material-you-enabled label,
+html.material-you-enabled h1,
+html.material-you-enabled h2,
+html.material-you-enabled h3,
+html.material-you-enabled h4,
+html.material-you-enabled h5,
+html.material-you-enabled h6 {
+    color: var(--md-sys-color-on-surface) !important;
+    background-color: transparent !important;
+}
+
+/* General containers, cards, sections */
+html.material-you-enabled div,
+html.material-you-enabled header,
+html.material-you-enabled footer,
+html.material-you-enabled main,
+html.material-you-enabled section,
+html.material-you-enabled nav,
+html.material-you-enabled article,
+html.material-you-enabled aside,
+html.material-you-enabled form,
+html.material-you-enabled ul,
+html.material-you-enabled table,
+html.material-you-enabled th,
+html.material-you-enabled td {
+    background-color: inherit !important;
+    color: inherit !important;
+    border-color: var(--md-sys-color-outline) !important;
+    border-radius: 0px !important; /* Reset radius for general divs */
+}
+
+/* Try to identify "cards" or distinct sections to give them a surface color */
+html.material-you-enabled div[class*="card"],
+html.material-you-enabled div[class*="container"],
+html.material-you-enabled div[class*="content"],
+html.material-you-enabled div[class*="panel"],
+html.material-you-enabled div[class*="widget"] {
+    background-color: var(--md-sys-color-surface) !important;
+    color: var(--md-sys-color-on-surface) !important;
+    border-radius: 16px !important;
+    border: 1px solid var(--md-sys-color-outline) !important;
+}
+
+
+/* Links */
+html.material-you-enabled a {
+    color: var(--md-sys-color-primary) !important;
+}
+
+/* Buttons */
+html.material-you-enabled button,
+html.material-you-enabled input[type="submit"],
+html.material-you-enabled input[type="button"] {
+    background-color: var(--md-sys-color-primary) !important;
+    color: var(--md-sys-color-on-primary) !important;
+    border: none !important;
+    border-radius: 20px !important;
+    padding: 8px 16px !important;
+    font-size: 1em !important;
+    cursor: pointer !important;
+    transition: filter 0.2s ease !important;
+}
+
+html.material-you-enabled button:hover,
+html.material-you-enabled input[type="submit"]:hover,
+html.material-you-enabled input[type="button"]:hover {
+    filter: brightness(1.1) !important;
+}
+
+/* Input Fields */
+html.material-you-enabled input,
+html.material-you-enabled textarea,
+html.material-you-enabled select {
+    background-color: var(--md-sys-color-surface-variant) !important;
+    color: var(--md-sys-color-on-surface-variant) !important;
+    border: 1px solid var(--md-sys-color-outline) !important;
+    border-radius: 8px !important;
+    padding: 10px !important;
+}
+
+html.material-you-enabled input::placeholder,
+html.material-you-enabled textarea::placeholder {
+    color: var(--md-sys-color-on-surface-variant) !important;
+    opacity: 0.7;
+}
+
+/* Remove image filters that some sites use for dark mode */
+html.material-you-enabled img,
+html.material-you-enabled svg,
+html.material-you-enabled video {
+    filter: none !important;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Material You Settings</title>
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      width: 250px;
+      padding: 15px;
+      background-color: #F3EDF7;
+      color: #1C1B1F;
+    }
+    h2 {
+      color: #6750A4;
+      font-size: 1.2em;
+      margin-top: 0;
+      margin-bottom: 15px;
+    }
+    label {
+      display: block;
+      margin-bottom: 8px;
+      cursor: pointer;
+    }
+    input[type="checkbox"] {
+      margin-right: 8px;
+      vertical-align: middle;
+    }
+    fieldset {
+      border: 1px solid #CAC4D0;
+      border-radius: 8px;
+      padding: 10px;
+      margin-top: 20px;
+    }
+    legend {
+      padding: 0 5px;
+      color: #49454F;
+    }
+  </style>
+</head>
+<body>
+  <h2>Material You Theme</h2>
+  <label>
+    <input type="checkbox" id="enableTheme"> Enable Theme
+  </label>
+
+  <fieldset id="themeModeSelector">
+    <legend>Theme Mode</legend>
+    <label><input type="radio" name="themeMode" value="automatic"> Automatic</label>
+    <label><input type="radio" name="themeMode" value="light"> Force Light</label>
+    <label><input type="radio" name="themeMode" value="dark"> Force Dark</label>
+  </fieldset>
+
+  <script src="popup.js"></script>
+</body>
+</html>
